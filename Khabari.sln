@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khabari", "Khabari\Khabari.csproj", "{69CA8005-FA8C-48B3-AE79-80698F3CD534}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khabari", "Khabari\Khabari.csproj", "{69CA8005-FA8C-48B3-AE79-80698F3CD534}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewsManagement", "NewsManagement", "{2A2DC547-A2F4-45BD-92D8-F68ADCD3BBDE}"
 EndProject
@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NM.Application", "NM.Applic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NM.Infrastructure", "NM.Infrastructure", "{BB7B7ED1-390F-41CF-8C67-652F8C6383FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsManagement.Infrastructure.EFCore", "NewsManagement.Infrastructure.EFCore\NewsManagement.Infrastructure.EFCore.csproj", "{169504F0-924F-4278-9705-93BF3B071766}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsManagement.Infrastructure.EFCore", "NewsManagement.Infrastructure.EFCore\NewsManagement.Infrastructure.EFCore.csproj", "{169504F0-924F-4278-9705-93BF3B071766}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsManagement.Domain", "NewsManagement.Domain\NewsManagement.Domain.csproj", "{316D92C4-5B32-47DC-88C4-267878740760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsManagement.Domain", "NewsManagement.Domain\NewsManagement.Domain.csproj", "{316D92C4-5B32-47DC-88C4-267878740760}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0_Framework", "0_Framework\0_Framework.csproj", "{86EB6BC2-4BE7-4E2F-B09C-A46B6083D784}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0_Framework", "0_Framework\0_Framework.csproj", "{86EB6BC2-4BE7-4E2F-B09C-A46B6083D784}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

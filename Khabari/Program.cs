@@ -15,6 +15,7 @@ builder.Services.AddDbContext<OneNewsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("khabari"));
 });
 
+builder.Services.AddTransient<IOneNewRepository, OneNewsRepository>();
 
 var app = builder.Build();
 IConfiguration configuration= app.Configuration;
@@ -22,7 +23,7 @@ IWebHostEnvironment environment = app.Environment;
 
 
 
-builder.Services.AddTransient<IOneNewRepository, OneNewsRepository>();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
