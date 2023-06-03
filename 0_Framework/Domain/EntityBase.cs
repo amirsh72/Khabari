@@ -11,7 +11,7 @@ namespace _0_Framework.Domain
         public long Id { get; set; }
         public DateTime CreationDate { get; set; }
 
-        public EntityBase(DateTime creationDate)
+        public EntityBase()
         {
             CreationDate = DateTime.Now;
         }

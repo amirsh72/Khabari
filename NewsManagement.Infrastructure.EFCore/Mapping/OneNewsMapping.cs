@@ -18,6 +18,8 @@ namespace NewsManagement.Infrastructure.EFCore.Mapping
             builder.Property(x => x.Subject).HasMaxLength(50);
             builder.Property(x=>x.Body).HasMaxLength(5000);
             builder.Property(x => x.Tag).HasMaxLength(100);
+
+            builder.HasOne(x=>x.NewsCategory).WithMany(x=>x.OneNews).HasForeignKey(x=>x.NewsCategoryId);
         }
     }
 }

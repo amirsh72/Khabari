@@ -9,8 +9,9 @@ namespace NewsManagement.Domain
 {
     public class OneNews:EntityBase
     {
-        public OneNews(DateTime creationDate) : base(creationDate)
+        public OneNews() 
         {
+
         }
 
         public string Subject { get; set; }
@@ -19,6 +20,8 @@ namespace NewsManagement.Domain
         public string Picture { get; set; }
         public string Tag { get; set; }
         public bool IsPublished { get; set; }
+        public long NewsCategoryId { get; set; }
+        public NewsCategory NewsCategory { get; set; }
 
     }
 }
