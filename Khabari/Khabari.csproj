@@ -17,8 +17,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NewsManagement.Application.Contracts\NewsManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\NewsManagement.Application\NewsManagement.Application.csproj" />
     <ProjectReference Include="..\NewsManagement.Domain\NewsManagement.Domain.csproj" />
     <ProjectReference Include="..\NewsManagement.Infrastructure.EFCore\NewsManagement.Infrastructure.EFCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Administration\Pages\News\OneNews\" />
   </ItemGroup>
 
 </Project>

@@ -11,7 +11,7 @@ namespace NewsManagement.Infrastructure.EFCore.Repository
 {
     public class NewsCategoryRepository : RepositoryBase<long, NewsCategory>, INewsCategoryRepository
     {
-        public NewsCategoryRepository(DbContext dbContext) : base(dbContext)
+        public NewsCategoryRepository(OneNewsContext dbContext) : base(dbContext)
         {
 
         }

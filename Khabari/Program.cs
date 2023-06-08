@@ -1,5 +1,9 @@
+using _0_Framework.Application;
+using Khabari;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using NewsManagement.Application;
+using NewsManagement.Application.Contracts.NewsCategory;
 using NewsManagement.Domain;
 using NewsManagement.Infrastructure.EFCore;
 using NewsManagement.Infrastructure.EFCore.Repository;
@@ -9,15 +13,19 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+builder.Services.AddTransient<IOneNewRepository, OneNewsRepository>();
+builder.Services.AddTransient<INewsCategoryApplication, NewsCategoryApplication>();
+builder.Services.AddTransient<INewsCategoryRepository, NewsCategoryRepository>();
+builder.Services.AddTransient<IFileUploader, FileUploader>();
 
 builder.Services.AddDbContext<OneNewsContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("khabari"));
 });
 
-builder.Services.AddTransient<IOneNewRepository, OneNewsRepository>();
 
 var app = builder.Build();
+
 IConfiguration configuration= app.Configuration;
 IWebHostEnvironment environment = app.Environment;
 

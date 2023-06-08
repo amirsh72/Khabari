@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsManagement.Domain", "Ne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0_Framework", "0_Framework\0_Framework.csproj", "{86EB6BC2-4BE7-4E2F-B09C-A46B6083D784}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsManagement.Application", "NewsManagement.Application\NewsManagement.Application.csproj", "{F29020C3-47A8-4B01-A415-69BCBD4F239E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsManagement.Application.Contracts", "NewsManagement.Application.Contracts\NewsManagement.Application.Contracts.csproj", "{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{86EB6BC2-4BE7-4E2F-B09C-A46B6083D784}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86EB6BC2-4BE7-4E2F-B09C-A46B6083D784}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86EB6BC2-4BE7-4E2F-B09C-A46B6083D784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29020C3-47A8-4B01-A415-69BCBD4F239E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29020C3-47A8-4B01-A415-69BCBD4F239E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29020C3-47A8-4B01-A415-69BCBD4F239E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29020C3-47A8-4B01-A415-69BCBD4F239E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +63,8 @@ Global
 		{BB7B7ED1-390F-41CF-8C67-652F8C6383FB} = {2A2DC547-A2F4-45BD-92D8-F68ADCD3BBDE}
 		{169504F0-924F-4278-9705-93BF3B071766} = {BB7B7ED1-390F-41CF-8C67-652F8C6383FB}
 		{316D92C4-5B32-47DC-88C4-267878740760} = {74B6FE95-9592-4333-BBFE-4129286FEF26}
+		{F29020C3-47A8-4B01-A415-69BCBD4F239E} = {E320FF86-A62E-449D-9DF0-94134F399980}
+		{DDE1AD6F-A005-4437-9A6E-E8D9E126054F} = {E320FF86-A62E-449D-9DF0-94134F399980}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {335D4CCC-BF04-4A15-B746-B7AC34727DE3}

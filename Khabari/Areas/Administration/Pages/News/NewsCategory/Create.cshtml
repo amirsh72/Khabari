@@ -1,0 +1,38 @@
+﻿@page
+@model Khabari.Areas.Administration.Pages.News.NewsCategory.CreateModel
+@{
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="Name" class="control-label">نام</label>
+                    <input type="text" class="form-control" name="Name" asp-for="createNewsCategory.Name" onchange="makeSlug('Name', 'Slug')">
+                    <span asp-validation-for="createNewsCategory.Name" class="error"></span>
+                </div>
+            </div>
+            
+        </div>
+       
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label for="Description" class="control-label">توضیحات</label>
+                    <textarea class="form-control autogrow" name="Description" asp-for="createNewsCategory.Description" onchange="fillField('Description', 'MetaDescription')"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="createNewsCategory.Description" class="error"></span>
+                </div>
+            </div>
+        </div>
+        
+      
+      
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد</button>
+    </div>
+</form>
