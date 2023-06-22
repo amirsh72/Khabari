@@ -33,6 +33,7 @@ namespace _0_Framework.Infrastructure
         public T Get(TKey id)
         {
            return _dbContext.Find<T>(id);
+            
         }
 
         public List<T> GetAll()

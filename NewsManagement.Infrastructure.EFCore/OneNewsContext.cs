@@ -24,6 +24,7 @@ namespace NewsManagement.Infrastructure.EFCore
        
 
         public DbSet<OneNews> News { get; set; }
+        public DbSet<NewsCategory> NewsCategories { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

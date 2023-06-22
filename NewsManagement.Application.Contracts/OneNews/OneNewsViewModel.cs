@@ -9,6 +9,7 @@ namespace NewsManagement.Application.Contracts.OneNews
 {
     public class OneNewsViewModel
     {
+        public long Id { get; set; }
         public string Subject { get; set; }
         public DateTime PublishDate { get; set; }
         public string Body { get; set; }
@@ -16,6 +17,7 @@ namespace NewsManagement.Application.Contracts.OneNews
         public string Tag { get; set; }
         public bool IsPublished { get; set; }
         public long NewsCategoryId { get; set; }
+        public string NewsCategoryName { get;set; }
 
     }
 }

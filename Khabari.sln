@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsManagement.Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsManagement.Application.Contracts", "NewsManagement.Application.Contracts\NewsManagement.Application.Contracts.csproj", "{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_1_KhabariQuery", "_1_KhabariQuery\_1_KhabariQuery.csproj", "{A1A9582D-E380-4CDC-AF4F-4AFB7292C75D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDE1AD6F-A005-4437-9A6E-E8D9E126054F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A9582D-E380-4CDC-AF4F-4AFB7292C75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A9582D-E380-4CDC-AF4F-4AFB7292C75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A9582D-E380-4CDC-AF4F-4AFB7292C75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A9582D-E380-4CDC-AF4F-4AFB7292C75D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

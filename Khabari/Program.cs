@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NewsManagement.Application;
 using NewsManagement.Application.Contracts.NewsCategory;
+using NewsManagement.Application.Contracts.OneNews;
 using NewsManagement.Domain;
 using NewsManagement.Infrastructure.EFCore;
 using NewsManagement.Infrastructure.EFCore.Repository;
@@ -16,6 +17,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddTransient<IOneNewRepository, OneNewsRepository>();
 builder.Services.AddTransient<INewsCategoryApplication, NewsCategoryApplication>();
 builder.Services.AddTransient<INewsCategoryRepository, NewsCategoryRepository>();
+builder.Services.AddTransient<IOneNewsApplication, OneNewsApplication>();
+builder.Services.AddTransient<IOneNewRepository, OneNewsRepository>();
+
 builder.Services.AddTransient<IFileUploader, FileUploader>();
 
 builder.Services.AddDbContext<OneNewsContext>(options =>

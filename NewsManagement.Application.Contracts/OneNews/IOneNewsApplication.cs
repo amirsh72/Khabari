@@ -11,8 +11,10 @@ namespace NewsManagement.Application.Contracts.OneNews
     {
 
         OperationResult Create(CreateOneNews command);
-        OperationResult Edit(CreateOneNews command);
+        OperationResult Edit(EditOneNews command);
         EditOneNews GetDetails(long id);
+        List<OneNewsViewModel> List();
+        OperationResult Delete(EditOneNews command);
 
         List<OneNewsViewModel> Search(OneNewsSearchModel searchModel);
     }
