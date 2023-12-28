@@ -26,7 +26,7 @@ namespace NewsManagement.Application
         {
             OperationResult result = new OperationResult();
             Random random = new Random();
-            string path = $"{random.Next(1, 10000)}+{DateTime.Now.Minute}+{DateTime.Now.Second}";
+            string path = $"{random.Next(1, 10000)}&{DateTime.Now.Minute}&{DateTime.Now.Second}";
             var picturename = _fileUploader.Upload(command.Picture, path);
             OneNews oneNews = new OneNews
             {

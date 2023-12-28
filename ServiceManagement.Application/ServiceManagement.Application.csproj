@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewsManagement.Infrastructure.EFCore\NewsManagement.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\ServiceCategory.Application.Contracts\ServiceCategory.Application.Contracts.csproj" />
+    <ProjectReference Include="..\ServicesManagement.Domain\ServicesManagement.Domain.csproj" />
   </ItemGroup>
 
 </Project>
